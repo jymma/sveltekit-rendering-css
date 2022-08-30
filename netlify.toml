@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "build/"
+
+[dev]
+  command = "npm run dev"
+
+[[plugins]]
+  package = "netlify-plugin-inline-functions-env-typescript" 
+
+[functions]
+  directory = "functions/"
+  node_bundler = "esbuild"
